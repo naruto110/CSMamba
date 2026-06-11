@@ -141,3 +141,4 @@ if __name__ == "__main__":
     parser.add_argument("--custom-npz", default=None, help="Custom npz with nodes/edges/labels (bypass demo cache).")
     args = parser.parse_args()
     inspect(args.checkpoint, device_override=args.device, embeddings_path=args.embeddings, custom_npz=args.custom_npz)
+ 

@@ -87,3 +87,4 @@ class RandomWalkTokenizer:
     def batch_tokenize(self, nodes: Iterable) -> torch.Tensor:
         tensors = [self.tokenize_node(n) for n in nodes]
         return torch.stack(tensors, dim=0)  # (N, num_walks, total_L, F)
+ 

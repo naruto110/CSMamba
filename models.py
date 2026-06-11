@@ -72,3 +72,4 @@ class MambaCommunityModel(nn.Module):
         node_emb = walk_emb.mean(dim=1)
         node_emb = F.normalize(node_emb, p=2, dim=-1)
         return node_emb
+ 

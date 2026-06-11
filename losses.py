@@ -153,3 +153,4 @@ def edge_contrastive_loss(
     if not loss_list:
         return torch.tensor(0.0, device=embeddings.device)
     return torch.stack(loss_list).mean()
+ 

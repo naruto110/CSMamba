@@ -86,3 +86,4 @@ class SearchConfig:
     # Unsupervised cutoff strategy for ranking -> predicted community
     cutoff_mode: str = "sweep"  # "sweep" (conductance/density) or "topk"
     fixed_k: int | None = None  # used when cutoff_mode == "topk"
+ 

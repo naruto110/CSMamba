@@ -78,3 +78,4 @@ def community_pr_re_f1(pred: Iterable, node_to_comm: dict, query) -> dict:
     f1 = 2 * prec * rec / (prec + rec + 1e-8)
     iou = len(inter) / (len(pred_set | gt_nodes) + 1e-8)
     return {"precision": prec, "recall": rec, "f1": f1, "iou": iou, "gt_size": len(gt_nodes)}
+ 

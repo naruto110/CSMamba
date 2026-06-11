@@ -185,3 +185,4 @@ def get_structural_pos_neg(
     pos_nodes = [p for p in pos_candidates if jaccard_scores.get(p, 0.0) >= jaccard_low_thresh and p != anchor_id]
     neg_nodes = [n for n in neg_candidates if jaccard_scores.get(n, 0.0) < jaccard_low_thresh and n != anchor_id]
     return pos_nodes, neg_nodes
+ 

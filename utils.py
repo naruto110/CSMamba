@@ -28,3 +28,4 @@ def get_device(prefer: Optional[str] = None) -> torch.device:
 def log(msg: str):
     ts = datetime.datetime.now().strftime("%H:%M:%S")
     print(f"[{ts}] {msg}")
+ 
